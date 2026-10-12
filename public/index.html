@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Progress Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <h2>ProgressTrack</h2>
+
+            <div>
+                <a href="#add-progress">Add Progress</a>
+                <a href="#students">Students</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <div>
+                <p>STUDENT DASHBOARD</p>
+
+                <h1>
+                    Track Your
+                    <span>Learning Progress</span>
+                </h1>
+
+                <p>
+                    Keep track of your courses, completion percentage,
+                    and learning journey in one place.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="add-progress">
+
+            <div class="section-heading">
+                <p>ADD NEW ENTRY</p>
+                <h2>Update Student Progress</h2>
+            </div>
+
+            <form id="progressForm">
+
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student name">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="courseName">Course Name</label>
+                    <input type="text" id="courseName" placeholder="Enter course name">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="completionPercentage">
+                        Completion Percentage
+                    </label>
+
+                    <input type="number" id="completionPercentage" placeholder="0 - 100" min="0" max="100">
+                </div>
+
+
+                <button type="submit">
+                    Add Progress
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+        </section>
+
+
+
+        <section id="students">
+
+            <div class="section-heading">
+                <p>LEARNING JOURNEY</p>
+                <h2>Student Progress</h2>
+            </div>
+
+
+            <div id="progressContainer">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Progress Tracker</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
